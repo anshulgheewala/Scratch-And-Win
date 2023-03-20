@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:maxads="http://schemas.applovin.com/android/1.0"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cv_ab">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:id="@+id/actionbar"
+                android:text="Scratch and win"
+                android:textSize="30dp"
+                android:paddingLeft="12dp"
+                android:background="#3BF"
+                android:textColor="@color/white"
+                android:paddingTop="5dp">
+
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="275dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="55dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/coin_icon"
+                        android:src="@drawable/coin2">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/value"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/coin_icon"
+                        android:paddingTop="2dp"
+                        android:textAlignment="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"></TextView>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+
+        <ViewFlipper
+            android:layout_width="360dp"
+            android:layout_height="210dp"
+            android:id="@+id/vf"
+            android:layout_centerInParent="true"
+            android:background="@drawable/vfbg"
+            android:layout_below="@+id/adView"
+            android:layout_marginTop="30dp"
+            android:flipInterval="3000"
+            android:autoStart="true"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right">
+
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/maskimg"
+                android:background="@drawable/fjbjg"
+                android:id="@+id/img1">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:background="@drawable/fjbjg"
+                android:layout_gravity="center"
+                android:src="@drawable/newsapp"
+                android:id="@+id/img2">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:background="@drawable/fjbjg"
+                android:layout_gravity="center"
+                android:src="@drawable/faqs"
+                android:id="@+id/img3">
+            </ImageView>
+
+        </ViewFlipper>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="30dp"
+            android:backgroundTint="#3BF"
+            android:layout_below="@+id/vf"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/scratch">
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:text="Scratch To Win">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="30dp"
+            android:backgroundTint="#3BF"
+            android:layout_below="@+id/vf"
+            android:layout_toRightOf="@+id/scratch"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/withdraw">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:text="Withdraw Funds">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="30dp"
+            android:backgroundTint="#3BF"
+            android:layout_below="@+id/scratch"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/contact">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:text="Contact Us">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="30dp"
+            android:backgroundTint="#3BF"
+            android:layout_below="@+id/withdraw"
+            android:layout_toRightOf="@+id/contact"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/other">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:text="Share App">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardCornerRadius="30dp"
+            android:backgroundTint="#3BF"
+            android:layout_below="@+id/contact"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="90dp"
+            android:id="@+id/privacy_policy">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:text="Privacy Policy">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <com.applovin.mediation.ads.MaxAdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/cv_ab"
+            android:layout_marginTop="10dp"
+            maxads:adUnitId="99aa499e7c290299" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+</ScrollView>

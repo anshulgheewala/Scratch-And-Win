@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "107805501185",
+    "project_id": "scratch-2d0ba",
+    "storage_bucket": "scratch-2d0ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107805501185:android:078d10baab08381fd2dd00",
+        "android_client_info": {
+          "package_name": "com.ag.scratchwinrealcash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107805501185-d8bgqq4jfe2orm1mb9cbpubs7c3ugcs2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGJeWtmA2kQCrgauaHQ4wMcLxf-KGHOUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107805501185-d8bgqq4jfe2orm1mb9cbpubs7c3ugcs2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

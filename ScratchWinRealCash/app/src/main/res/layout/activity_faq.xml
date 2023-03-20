@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".faq">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cv_ab">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:id="@+id/actionbar"
+                android:text="Scratch and win"
+                android:textSize="30dp"
+                android:paddingLeft="12dp"
+                android:background="#3BF"
+                android:textColor="@color/white"
+                android:paddingTop="5dp">
+
+            </TextView>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/que1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_ab"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:justificationMode="inter_word"
+            android:text="1.Is Internet Connection Necessary To use the app?"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:text="--> Yes, Internet Connection is must to use the app otherwise no reward will be given in scratch card."
+            android:layout_below="@+id/que1"
+            android:justificationMode="inter_word"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#6C6C6C"
+            android:id="@+id/ans1"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/que2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ans1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:justificationMode="inter_word"
+            android:text="2.What if i am not getting the reward on scratchcard constantly?"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:text="--> If you are not getting reward at constant rate please check your internet connection and try after some time or try using vpn."
+            android:layout_below="@+id/que2"
+            android:id="@+id/ans2"
+            android:textColor="#6C6C6C"
+            android:layout_marginLeft="4dp"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/que3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ans2"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:justificationMode="inter_word"
+            android:text="3.How Much time will it take to proceed my withdrawal?"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:text="--> It generally takes 72 hours to proceed your payment but in some case it may take longer than this period."
+            android:layout_below="@+id/que3"
+            android:id="@+id/ans3"
+            android:layout_marginLeft="4dp"
+            android:textColor="#6C6C6C"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/que4"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ans3"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:justificationMode="inter_word"
+            android:text="4.What is the threshold withdraw limit ?"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:text="--> The minimum withdrawal limit is 50 Rs."
+            android:layout_below="@+id/que4"
+            android:id="@+id/ans4"
+            android:layout_marginLeft="4dp"
+            android:textColor="#6C6C6C"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/que5"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ans4"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:justificationMode="inter_word"
+            android:text="5.What If i unistalled the app And re-install it? should my reward will be stored?"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:text="--> No,If you Unistalled the app from your device your rewards will be lost and can not be reverted back."
+            android:layout_below="@+id/que5"
+            android:id="@+id/ans5"
+            android:textColor="#6C6C6C"
+            android:layout_marginLeft="4dp"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/que6"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ans5"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:justificationMode="inter_word"
+            android:text="6.What if i have other queries?"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:text="--> If you have other queries, please fell free to contact us by tapping contact us button on home screen."
+            android:layout_below="@+id/que6"
+            android:id="@+id/ans6"
+            android:textColor="#6C6C6C"
+            android:layout_marginLeft="4dp"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="12dp"
+            android:textSize="20dp"></TextView>
+    </RelativeLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/design"
+    android:layout_height="match_parent"
+    tools:context=".splash">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/lottie_splash"
+        app:lottie_rawRes="@raw/splash"
+        app:lottie_autoPlay="true">
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scratch and Win"
+        android:layout_below="@+id/lottie_splash"
+        android:id="@+id/name1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:fontFamily="monospace"
+        android:textSize="30dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keep Scratching,Keep Earning!"
+        android:layout_below="@+id/name1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:fontFamily="monospace"
+        android:textSize="20dp"></TextView>
+
+
+
+
+
+</RelativeLayout>

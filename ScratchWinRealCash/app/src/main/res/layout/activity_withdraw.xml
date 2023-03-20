@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design"
+    xmlns:maxads="http://schemas.applovin.com/android/1.0"
+    tools:context=".Withdraw">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv_ab">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/actionbar"
+            android:text="Scratch and win"
+            android:textSize="30dp"
+            android:paddingLeft="12dp"
+            android:background="#3BF"
+            android:textColor="@color/white"
+            android:paddingTop="5dp">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="275dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="55dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/coin_icon"
+                    android:src="@drawable/coin2">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tvw"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/coin_icon"
+                    android:paddingTop="2dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"></TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            app:cardElevation="30dp"
+            android:id="@+id/cv"
+            app:cardCornerRadius="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="13dp"
+                    android:paddingTop="15dp"
+                    android:text="Name:"
+                    android:textSize="20dp"></TextView>
+
+                <EditText
+                    android:id="@+id/edittext_name"
+                    android:layout_width="210dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="textPersonName"></EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="120dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="13dp"
+                    android:paddingTop="15dp"
+                    android:text="Upi id:"
+                    android:textSize="20dp"></TextView>
+
+                <EditText
+                    android:id="@+id/edittext_upi"
+                    android:layout_width="210dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="60dp"></EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="200dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="13dp"
+                    android:paddingTop="15dp"
+                    android:text="Amount:"
+                    android:textSize="20dp"></TextView>
+
+                <EditText
+                    android:layout_width="210dp"
+                    android:id="@+id/edittext_amount"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="numberDecimal"
+                    android:layout_height="60dp"></EditText>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="130dp"
+                android:id="@+id/cashout"
+                android:layout_gravity="center"
+                android:text="cash out">
+            </Button>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1"
+            android:text="--> the minimum withdrawal limit is 50rs."
+            android:layout_below="@id/cv"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="17dp"></TextView>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="--> the withdrawal may take upto 72 hrs. to proceed"
+            android:layout_below="@id/r1"
+            android:id="@+id/r2"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"></TextView>
+
+
+        <com.applovin.mediation.ads.MaxAdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/cv"
+            android:layout_marginTop="110dp"
+            maxads:adUnitId="99aa499e7c290299" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
